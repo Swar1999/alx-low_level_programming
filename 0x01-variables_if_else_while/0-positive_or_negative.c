@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlid.h>
 /**
- * main - program that use the rand function
- * return 0 is succese
+ * main - Entry point
+ *  Description: programe that use the rand functoin
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
