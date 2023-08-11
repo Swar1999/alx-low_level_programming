@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-#include <stdlid.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  *  Description: programe that use the rand functoin
