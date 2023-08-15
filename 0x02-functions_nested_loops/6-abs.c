@@ -9,5 +9,7 @@
 int _abs(int)
 {
 	int i;
-		_abs(i);
+		if (i < 0)
+			_putchar(i * -1);
+		_putchar(i);
 }
