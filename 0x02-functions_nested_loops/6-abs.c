@@ -3,14 +3,12 @@
 /**
  * _abs - Entry point
  * Description: program that calculate the absalut value
- * @int : integer
+ * @i : integer
  * Return: Always 0 (Success)
  */
-int _abs(int)
+int _abs(int i)
 {
-	int i;
-		if (i < 0)
-			_putchar(i * -1);
-		_putchar(i);
-		return (0);
+	if (i < 0)
+		i = (-1) * i;
+	return (i);
 }
