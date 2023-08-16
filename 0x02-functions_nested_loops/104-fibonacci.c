@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
+ * numLength - Entry point
  * Description: program that prints fibonacci serise
  * @num : order
  * Return: Always 0 (Success)
@@ -21,6 +21,11 @@ int numLength(int num)
 	}
 	return (length);
 }
+/**
+ * main - Entry point
+ * Description: program that prints fibonacci serise
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int count, init10;
@@ -29,7 +34,7 @@ int main(void)
 	for (count = 1; count <= 98; count++)
 	{
 		if (f10 > 0)
-			printf("%lu,", f10);
+			printf("%lu", f10);
 		init10 = numLength(mx) - 1 - numLength(f1);
 
 		while (f10 > 0 && init10 > 0)
