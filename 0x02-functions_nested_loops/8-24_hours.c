@@ -14,5 +14,4 @@ void jack_bauer(void)
 			for (m = 0; m < 60; m++)
 				_putchar(m);
 		}
-		return (0);
 }
