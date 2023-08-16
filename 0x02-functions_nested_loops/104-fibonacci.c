@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (f10 > 0)
 			printf("%lu,", f10);
-		init10 = numLength(mx) - 1 - numLength(f1);
+		init10 = numl_ength(mx) - 1 - numl_ength(f1);
 
 		while (f10 > 0 && init10 > 0)
 		{
@@ -26,6 +26,7 @@ int main(void)
 		sumo = f10 + f20 + (f1 + f2) / mx;
 		f1 = f2;
 		f10 = f20;
+		f2 = sum;
 		f20 = sumo;
 
 		if (count != 98)
