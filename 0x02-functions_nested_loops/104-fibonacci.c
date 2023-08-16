@@ -13,7 +13,7 @@ int main(void)
 	for (count = 1; count <= 98; count++)
 	{
 		if (f10 > 0)
-			printf("%u,", f10);
+			printf("%lu,", f10);
 		init10 = numLength(mx) - 1 - numLength(f1);
 
 		while (f10 > 0 && init10 > 0)
