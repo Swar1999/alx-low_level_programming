@@ -3,8 +3,24 @@
 /**
  * main - Entry point
  * Description: program that prints fibonacci serise
+ * @num : order
  * Return: Always 0 (Success)
  */
+
+int numLength(int num)
+{
+	int length = 0;
+
+	if (!num)
+		return (1);
+
+	while (num)
+	{
+		num = num / 10;
+		length += 1;
+	}
+	return (length);
+}
 int main(void)
 {
 	int count, init10;
@@ -14,7 +30,7 @@ int main(void)
 	{
 		if (f10 > 0)
 			printf("%lu,", f10);
-		init10 = numl_ength(mx) - 1 - numl_ength(f1);
+		init10 = numLength(mx) - 1 - numLength(f1);
 
 		while (f10 > 0 && init10 > 0)
 		{
