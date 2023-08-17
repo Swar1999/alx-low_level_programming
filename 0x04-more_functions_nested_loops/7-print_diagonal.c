@@ -4,7 +4,6 @@
  * print_diagonal - Entry point
  * Description: program that prints diagonal line
  * @n : number
- * Return: Always 0 (Success)
  */
 void print_diagonal(int n)
 {
