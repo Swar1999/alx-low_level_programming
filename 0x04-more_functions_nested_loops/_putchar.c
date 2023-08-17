@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 /**
  * _putchar - Entry point
  * Description : write char in stdiot
