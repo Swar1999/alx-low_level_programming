@@ -12,15 +12,20 @@ int main(void)
 	char str2[] = "Buzz";
 		for (i = 1; i <= 100; i++)
 		{
-			if (i % 3 == 0)
+			if (i % 3 == 0 && !(i % 5 == 0))
 				printf("%s\n", str1);
-			else if (i % 5 == 0)
+			else if (i % 5 == 0 && !(i % 3 == 0))
 				printf("%s\n", str2);
-			else
-				(i % 3 == 0 && i % 5 == 0)
+			else if (i % 3 == 0 && i % 5 == 0)
 				printf("%s\n", str1, str2);
-			printf("%d\n", i);
+			else
+				printf("%d", i);
+			if (i != 100)
+				printf(" ");
+			else
+				printf("\n");
 		}
+		return (0);
 }
 
 
