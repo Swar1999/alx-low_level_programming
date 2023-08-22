@@ -21,7 +21,9 @@ void puts2(char *str)
 		for (n = 0; n <= t; n++)
 		{
 			if (n % 2 == 0)
+			{
 				_putchar(str[n]);
+			}
 		}
-		_putchar('\0');
+		_putchar('\n');
 }
