@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - Entry point
+ * _strcat - Entry point
  * Description: program that prints two strings
  * @dest: pointer
  * @src: pointer
