@@ -6,7 +6,7 @@
  * @dest: pointer
  * @src: pointer
  * @n: counter
- * Return: Always 0 (Success)
+ * Return: void
  */
 char *_strncat(char *dest, char *src, int n)
 {
