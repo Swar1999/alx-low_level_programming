@@ -5,7 +5,7 @@
  * Description: program that prints two strings
  * @dest: pointer
  * @src: pointer
- * Return: Always 0 (Success)
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
