@@ -1,7 +1,20 @@
 #include "main.h"
+int a_sqrt_recursion(int n, int i);
+/**
+ * _sqrt_recursion - Entry point
+ * Description: program that check n value
+ * @n : intger
+ * Return: Always 0 (Success)
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	return (a_sqrt_recursion(n, 0));
+}
 
 /**
- * a__sqrt_recursion - Entry point
+ * a_sqrt_recursion - Entry point
  * Description: program that return the square root
  * @n :intger 1
  * @i :intger 2
