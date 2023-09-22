@@ -10,19 +10,17 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
-	list_t *ptr;
-		ptr = malloc(sizeof(list_t));
-		if (ptr == NULL)
+		h = malloc(sizeof(list_t));
+		if (h == NULL)
 		{
-			printf("(nil)");
+			printf("[0] (nil)");
 			return (-1);
 		}
-		while (i < ptr->len)
+		while (i < h->len)
 		{
-			printf("%lu", ptr->str);
-			ptr = ptr->next;
+			printf("%s", h->str);
 			i++;
+			h = h->next;
 		}
-		free(ptr);
 		return (0);
 }
