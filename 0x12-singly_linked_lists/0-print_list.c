@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		}
 		while (i < ptr->len)
 		{
-			printf("%s", ptr->str);
+			printf("%lu", ptr->str);
 			ptr = ptr->next;
 			i++;
 		}
