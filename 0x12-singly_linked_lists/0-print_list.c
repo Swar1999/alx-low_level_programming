@@ -13,10 +13,10 @@ size_t print_list(const list_t *h)
 		h = malloc(sizeof(list_t));
 		if (h == NULL)
 		{
-			printf("[0] (nil)");
+			printf("(nil)");
 			return (-1);
 		}
-		while (i < h->len)
+		while (h != NULL)
 		{
 			printf("%s", h->str);
 			i++;
