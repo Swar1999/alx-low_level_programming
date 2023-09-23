@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 	h = malloc(sizeof(list_t));
 		if (h == NULL)
 		{
-			printf('(nil)');
+			printf("(nil)");
 			return (-1);
 		}
 		while (h != NULL)
