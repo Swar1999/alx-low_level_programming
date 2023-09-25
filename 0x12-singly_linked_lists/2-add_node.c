@@ -17,7 +17,7 @@ list_t *add_node(list_t **head, const char *str)
 		if (!h) /*new node has not been created*/
 			return (NULL);
 		h->str = strdup(str); /*duplicat the string into new node*/
-		h->len = len; /*the length of string*/
+		h->len = i; /*the length of string*/
 		h->next = (*head); /*pointer to the frist node*/
 		(*head) = h;/*update the frist node*/
 		return (*head);
