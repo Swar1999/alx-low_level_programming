@@ -9,16 +9,21 @@
  */
 size_t print_list(const list_t *h)
 {
-	h = malloc(sizeof(list_t));
+	unsigned int counter = 0, i;
+		h = malloc(sizeof(list_t));
 		if (h == NULL)
 		{
 			printf("(nil)");
 			return (-1);
 		}
-		while (h != NULL)
+		while (h->next != NULL)
 		{
-			printf("%s", h->str);
+			for (i = 0; i < h->len; i++)
+			{
+				printf("%s", h->str);
+			}
 			h = h->next;
+			counter++;
 		}
 		return (0);
 }
