@@ -29,6 +29,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		/* to swape between the pointers*/
 		while (swp->next)
 			swp = swp->next;
-			swp->next = h;
-			return (h);
+		swp->next = h;
+		return (h);
 }
