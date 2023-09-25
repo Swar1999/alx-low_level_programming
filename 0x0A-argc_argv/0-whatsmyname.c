@@ -1,14 +1,14 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: program that prints its name, followed by a new line
- * @argv : vector
- * @argc : counter
- * Return: Always 0 (Success)
+ * main - entry point
+ * Description : program that prints its name
+ * @argc : arguments counter
+ * @argv :arguments vector
+ * Return: 0
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char const *argv[])
 {
-	printf("%s\n", *argv[0]);
+	(void)argc; /*ignore argc paramter in this program*/
+	printf("%s\n", argv[0]); /*[0] gives the program name*/
 	return (0);
 }
