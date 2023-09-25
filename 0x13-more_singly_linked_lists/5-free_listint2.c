@@ -10,7 +10,7 @@ void free_listint2(listint_t **head)
 	listint_t *swp;
 		if (head == NULL) /*already setup */
 			return; /*return nothing*/
-		while (head)
+		while (*head)
 		{
 			swp = (*head)->next;/*let it points to next node*/
 			free(*head);/*free space*/
