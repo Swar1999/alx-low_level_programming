@@ -21,9 +21,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 			return (h);
 		}
 		while (swp->next)/*swap the pointers*/
-		{
 			swp = swp->next;
-			swp->next = h;
-			return (h);
-		}
+		swp->next = h;
+		return (h);
 }
