@@ -10,7 +10,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *h;
-	unsigned int i;
+	unsigned int i = 0;
 		while (str[i])
 			i++; /*read all the string to be duplicated*/
 		h = malloc(sizeof(list_t));
