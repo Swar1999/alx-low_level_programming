@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		}
 		number = atoi(argv[1]); /*pares the number that passed*/
 		result  = 0;
-		if (argc > 0)/*ckeck if number is negative*/
+		if (argc < 0)/*ckeck if number is negative*/
 		{
 			printf("0\n");
 			return (0);
