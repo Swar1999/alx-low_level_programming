@@ -10,8 +10,9 @@ void free_list(list_t *head)
 	list_t *swp;
 		while (head != NULL)
 		{
-			swp = head;/*start to copy all the list contains to it*/
-			head = head->next;/*read each node */
-			free(swp);/*free each node memory space*/
+			swp = head->next;/*start to copy all the list contains to it*/
+			free(head->str);/*free data*/
+			free(head);/*free each node memory space*/
+			head = swp;
 		}
 }
