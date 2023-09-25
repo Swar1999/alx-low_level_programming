@@ -56,5 +56,5 @@ int main(int argc, char *argv[])
 		y = _atoi(argv[2]);/*convert string into int*/
 		mul = x * y;
 		printf ("%d\n", mul);
-		return (mul);
+		return (0);
 }
