@@ -1,18 +1,15 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: program that prints all arguments it receives.
- * @argc :counter
- * @argv : vector
- * Return: Always 0 (Success)
+ * main - entry point
+ * Description : program prints all argumrnts
+ * @argc : argument count
+ * @argv : arguments values
+ * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char const argv[])
 {
 	int i;
-		for (i = 0; i < argc; i++)
-		{
-			printf("%s\n", argv[i]);
-		}
+		for (i = 0; i < argc; i++)/*go through all elements*/
+		printf("%s\n", argv[i]);/*print each one*/
 		return (0);
 }
