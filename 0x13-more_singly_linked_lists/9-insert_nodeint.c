@@ -25,8 +25,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			*head = newnode;/*switch pointers*/
 			return (newnode);
 		}
-		/*case two*/
-		for (i = 0; i < idx && swp; i++)
+			/*case two*/
+		for (i = 0; i < idx && swp->next != NULL; i++)
 		{
 			if (i == idx - 1)/*counter starts from 0*/
 			{
