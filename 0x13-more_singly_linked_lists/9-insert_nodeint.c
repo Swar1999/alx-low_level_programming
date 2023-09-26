@@ -10,12 +10,17 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int i;
+	unsigned int i, j = 0;
 	listint_t *swp = *head;
 	listint_t *newnode;
 		newnode = malloc(sizeof(listint_t));
 		if (newnode == NULL)
 			return (NULL);
+		if (*head != NULL)
+		{
+			*head = (*head)->next;
+			j++;/*read the hole list*/
+		}
 		newnode->n = n;
 		newnode->next = NULL; /*insert the new node at the end*/
 		/*case one*/
