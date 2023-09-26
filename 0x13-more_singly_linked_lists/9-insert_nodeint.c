@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * insert_nodeint_at_index - function to add new node at some index
@@ -31,7 +30,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			return (newnode);
 		}
 			/*case two*/
-		for (i = 0; i < idx && swp->next != NULL; i++)
+		for (i = 0; i < idx ; i++)
 		{
 			if (i == idx - 1)/*counter starts from 0*/
 			{
