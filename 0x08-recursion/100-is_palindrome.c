@@ -32,7 +32,7 @@ int strlength(char *s)
  */
 int strpal(char *s, int i, int len)
 {
-	if (s[i] != s[len - i - 1])/*check each letter in string*/
+	if (*(s + i) != *(s + len - 1))/*check each letter in string*/
 		return (0);
 	if (i >= len)/*string to check*/
 		return (1);
