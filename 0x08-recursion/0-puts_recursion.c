@@ -1,18 +1,18 @@
 #include "main.h"
-
 /**
- * _puts_recursion - Entry point
- * Description: program that prints string follow by new line
- * @s: pointer
- * Return: Always 0 (Success)
+ * _puts_recursion - function that prints string
+ * @s: string to be printed
+ * Return: nothing
  */
 void _puts_recursion(char *s)
 {
-	if (*s)
+	if (*s != '\0')/*not the end of string*/
 	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
+		_putchar(*s);/*print one char*/
+		_puts_recursion(s + 1);/*moving to next char*/
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
