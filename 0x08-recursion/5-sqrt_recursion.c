@@ -20,5 +20,6 @@ int _sqrt(int n, int i)
 	if (i * i > n)
 		return (-1); /*not root*/
 	if (i * i == n)
-		return (_sqrt(n, i + 1));
+		return (i);
+	return (_sqrt(n, i + 1));
 }
