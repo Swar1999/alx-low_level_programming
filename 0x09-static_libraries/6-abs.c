@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _abs - Entry point
  * Description: program that calculate the absalut value
@@ -8,7 +7,7 @@
  */
 int _abs(int i)
 {
-        if (i < 0)
-                i = (-1) * i;
-        return (i);
+	if (i < 0)
+		i = (-1) * i;
+	return (i);
 }

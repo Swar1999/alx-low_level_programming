@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
- * _atoi - Entry point
- * Description: program that prints _putchar
- * @s :pointer
- * Return: Always 0 (Success)
+ * _atoi - function
+ * @s : string
+ * Return: int
  */
 int _atoi(char *s)
 {
