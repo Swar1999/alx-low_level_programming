@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <strings.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * add_node - function to add node at the beginng of linked list
@@ -20,5 +20,5 @@ list_t *add_node(list_t **head, const char *str)
 		h->len = n;/*length of the string*/
 		h->next = (*head);
 		(*head) = h;/*update the head pointer*/
-		return (head);/*address of the new node*/
+		return (*head);/*address of the new node*/
 }
