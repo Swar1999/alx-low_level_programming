@@ -10,7 +10,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *h;
-	unsigned int n;
+	unsigned int n = 0;
 		while (str[n])
 			n++;/*go throw all string*/
 		h = malloc(sizeof(list_t));/*reserve an address*/
