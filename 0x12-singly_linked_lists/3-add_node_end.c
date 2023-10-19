@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <string.h>
-#include <strlib.h>
+#include <stdlib.h>
 /**
  * add_node_end - function to add node at the end
  * @head: struct argument
