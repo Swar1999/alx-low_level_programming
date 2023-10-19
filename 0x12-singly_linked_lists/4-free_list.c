@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * free_list - function to free the linked list
- * @head - struct argument
+ * @head :struct argument
  * Return: nothing
  */
 void free_list(list_t *head)
