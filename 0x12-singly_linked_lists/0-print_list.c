@@ -17,5 +17,5 @@ size_t print_list(const list_t *h)
 			h = h->next;/* move to next node*/
 			count++;
 		}
-		return (count)/*number of elements*/
+		return (count);/*number of elements*/
 }
