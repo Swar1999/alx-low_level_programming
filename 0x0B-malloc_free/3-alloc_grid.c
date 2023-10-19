@@ -12,7 +12,7 @@ int **alloc_grid(int width, int height)
 {
 	int x, y;
 	int **ary;
-		if (height <= 0 || width <= 0)/*frist check*/
+		if (width <= 0 || height <= 0)/*frist check*/
 			return (NULL);
 		ary = malloc(sizeof(height * sizeof(int *)));/*allocat memory*/
 		if (ary == NULL)/*malloc failed*/
