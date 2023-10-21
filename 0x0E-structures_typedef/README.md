@@ -1,1 +1,1 @@
-readme file for structures and typedef project
+readme file for structures_typdef project
