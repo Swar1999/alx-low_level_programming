@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * malloc_checked - function that check memory using malloc
  * @b: paramter
@@ -10,7 +9,7 @@ void *malloc_checked(unsigned int b)
 {
 	int *meme;
 		meme = malloc(sizeof(b));
-		if (meme == NULL)/*malloc failed*/
+		if (meme == 0)/*malloc failed*/
 			exit(98);
 		return (meme);
 }
