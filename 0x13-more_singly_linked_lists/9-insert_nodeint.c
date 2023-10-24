@@ -27,7 +27,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			/*case two*/
 		for (i = 0; i < idx ; i++)
 		{
-			if (i = idx - 1)/*counter starts from 0*/
+			if (i == idx - 1)/*counter starts from 0*/
 			{
 				newnode->next = swp->next;
 				swp->next = newnode;
