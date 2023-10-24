@@ -24,7 +24,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			*head = newnode;/*switch pointers*/
 			return (newnode);
 		}
-			/*case two*/
+		/*case two*/
 		for (i = 0; i < idx ; i++)
 		{
 			if (i == idx - 1)/*counter starts from 0*/
@@ -37,6 +37,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			{
 				swp = swp->next;
 			}
-			return (NULL);/*insertion in the idx failed*/
 		}
+		return (NULL);/*insertion in the idx failed*/
 }
