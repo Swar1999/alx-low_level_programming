@@ -8,7 +8,7 @@
 void *malloc_checked(unsigned int b)
 {
 	int *meme;
-		meme = malloc(sizeof(b));
+		meme = malloc(b);
 		if (meme == 0)/*malloc failed*/
 			exit(98);
 		return (meme);
