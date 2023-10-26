@@ -13,7 +13,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		{
 			counter += num & 1;
 			num >>= 1;/*right shifting*/
-			num++;
 		}
 		return (counter);
 }
