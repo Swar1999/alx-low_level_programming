@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 			_putchar('0');
 			return;
 		}
-		while (n)
+		while (n > 0)
 		{
 			ary[out++] = (n & 1) + '0';/*add ascii value*/
 			n >>= 1;/*rigth shifted to creat new space*/
