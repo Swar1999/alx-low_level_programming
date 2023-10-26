@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 			return (0);
 		for (num = 0; num <= 63; n >>= 1, num++)
 		{
-			if (index == i)/*bit equal given value*/
+			if (index == num)/*bit equal given value*/
 				return (n & 1);
 		}
 		return (-1);/*didn't find the bit*/
