@@ -21,10 +21,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		count = read(file_des, buff, letters);
 		if (count == -1)/*faild to read*/
 			return (0);
-		count = write(STDOUT_FILENO, buff, letters);
+		count = write(STDOUT_FILENO, buff, count);
 		if (count == -1)/*Faild to write*/
 			return (0);
-		write(1, buff, count);/*write to stander output*/
 		free(buff);
 		close(file_des);/*close the file*/
 		return (count);
