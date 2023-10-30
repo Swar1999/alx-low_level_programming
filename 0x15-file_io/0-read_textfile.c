@@ -7,7 +7,6 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int i;
 	int file_des;/*file descriptor*/
 	ssize_t count;/* to count number of letters*/
 	char *buff;/*buffer to store data while using read and write functions*/
