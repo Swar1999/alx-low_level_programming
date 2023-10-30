@@ -15,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		file_des = open(filename, O_RDONLY);/*open file in read only mode*/
 		if (file_des == -1)/*failed to creat*/
 			return (0);
-		buff = malloc(sizeof(char) * (letters + 1));/*allocate buffer size*/
+		buff = malloc(sizeof(char) * letters);/*allocate buffer size*/
 		if (buff == NULL)/*malloc failed*/
 		{
 			close(file_des);
