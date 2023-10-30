@@ -10,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file_des;/*file descriptor*/
 	ssize_t count;/* to count number of letters*/
 	char *buff;/*buffer to store data while using read and write functions*/
-		if (filename == NULL || letters == 0)/*file dose not exists*/
+		if (!filename || !letters)/*file dose not exists*/
 			return (0);
 		file_des = open(filename, O_RDONLY);/*open file in read only mode*/
 		if (file_des == -1)/*failed to creat*/
