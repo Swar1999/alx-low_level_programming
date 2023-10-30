@@ -7,6 +7,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	int i;
 	int file_des;/*file descriptor*/
 	ssize_t count;/* to count number of letters*/
 	char *buff;/*buffer to store data while using read and write functions*/
@@ -17,25 +18,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 		buff = malloc(sizeof(char) * letters);/*allocate buffer size*/
 		if (buff == NULL)/*malloc failed*/
-		{
-			close(file_des);
 			return (0);
-		}
 		count = read(file_des, buff, letters);
 		if (count == -1)/*faild to read*/
-		{
-			close(file_des);
-			free(buff);
 			return (0);
-		}
 		count = write(STDOUT_FILENO, buff, letters);
 		if (count == -1)/*Faild to write*/
-		{
-			close(file_des);
-			free(buff);
 			return (0);
-		}
-		close(file_des);/*close the file*/
+		write(1, buff, count);/*write to stander output*/
 		free(buff);
+		close(file_des);/*close the file*/
 		return (count);
 }
